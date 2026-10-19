@@ -9,6 +9,7 @@ export default function Nav() {
         </a>
         <div className="nav-right">
           <a href="#sprueche" className="nav-link">Sprüche</a>
+          <a href="#newsletter" className="nav-link">Newsletter</a>
           <a href="#shop" className="nav-cta">Zum Shop</a>
         </div>
       </div>

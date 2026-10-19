@@ -1,22 +1,14 @@
-import { useState } from 'react'
-
+// Newsletter – zentraler Baustein newsletter-hub (seit 19.10.2026).
+// Formular + Anmeldung kommen von newsletter.cleebration.com (Script in index.html);
+// Liste, Sprache und Texte: cleebration-web/newsletter-hub/worker/sites.config.mjs (Schlüssel "eggstra").
 export default function Newsletter() {
-  const [done, setDone] = useState(false)
   return (
-    <section className="signup">
+    <section className="signup" id="newsletter">
       <div className="wrap">
         <div className="box">
           <h2>Hol dir den <span className="yolkword">Eggsperten</span>-Newsletter</h2>
           <p>Jede Woche ein neuer Frühstücksspruch – und als Erste:r erfahren, wann der Shop öffnet.</p>
-          <div className="form">
-            <input type="email" placeholder="deine@email.at" aria-label="E-Mail-Adresse" />
-            <button type="button" onClick={() => setDone(true)}>
-              {done ? 'Willkommen!' : 'Anmelden'}
-            </button>
-          </div>
-          <p className="form-note">
-            Noch nicht aktiv – der Newsletter-Dienst wird vor dem Start angebunden.
-          </p>
+          <newsletter-signup site="eggstra" heading="" text=""></newsletter-signup>
         </div>
       </div>
     </section>
