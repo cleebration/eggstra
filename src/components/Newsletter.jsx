@@ -1,16 +1,12 @@
-// Newsletter – zentraler Baustein newsletter-hub (seit 19.10.2026).
-// Formular + Anmeldung kommen von newsletter.cleebration.com (Script in index.html);
-// Liste, Sprache und Texte: cleebration-web/newsletter-hub/worker/sites.config.mjs (Schlüssel "eggstra").
+// Newsletter – eigene Seite /newsletter wie auf den anderen cleebration-Websites (seit 22.10.2026).
+// Formular, Überschrift und Text kommen vom zentralen Baustein newsletter.cleebration.com (Script in index.html);
+// Liste, Sprache, Texte und Farben: cleebration-web/newsletter-hub/worker/sites.config.mjs (Schlüssel "eggstra").
 export default function Newsletter() {
   return (
-    <section className="signup" id="newsletter">
+    <main className="nl-page" id="newsletter">
       <div className="wrap">
-        <div className="box">
-          <h2>Hol dir den <span className="yolkword">Eggsperten</span>-Newsletter</h2>
-          <p>Jede Woche ein neuer Frühstücksspruch – und als Erste:r erfahren, wann der Shop öffnet.</p>
-          <newsletter-signup site="eggstra" heading="" text=""></newsletter-signup>
-        </div>
+        <newsletter-signup site="eggstra"></newsletter-signup>
       </div>
-    </section>
+    </main>
   )
 }

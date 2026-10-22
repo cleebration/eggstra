@@ -5,9 +5,10 @@ export default function Footer() {
   return (
     <footer>
       <div className="wrap">
-        <a href="#top" className="footer-brand"><Logo size={22} /></a>
+        <a href="/" className="footer-brand"><Logo size={22} /></a>
         <p>Frühstück mit Wortwitz · folge auf Instagram &amp; Pinterest</p>
         <div className="footer-links">
+          <a href="/newsletter">Newsletter</a>
           <a href="/impressum.html">Impressum</a>
           <a href="/datenschutz.html">Datenschutz</a>
         </div>
