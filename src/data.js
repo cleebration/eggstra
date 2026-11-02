@@ -25,12 +25,13 @@ export const sprueche = [
 //  - live: false  -> "kommt bald"-Vorschau ohne Verkauf (aktueller, nicht-gewerblicher Zustand)
 //  - live: true   -> Button zum Spreadshop (NUR setzen, wenn Verkauf rechtlich geklärt ist;
 //                    dann auch das Impressum auf gewerblich umstellen!)
+// 02.11.2026 eingeschaltet (Chris): Spreadshop ist Verkäufer, eggstra bekommt nur
+// Provision – Impressum bleibt wie es ist. Produkte = was im Shop wirklich liegt.
 export const shop = {
-  live: false,
-  url: '', // z. B. 'https://eggstra.myspreadshop.at' – erst eintragen, wenn live = true
+  live: true,
+  url: 'https://eggstra.myspreadshop.at',
   products: [
-    { ic: '☕', name: 'Tassen & Eierbecher', desc: 'Der Klassiker – Spruch trifft Frühstück direkt am Tisch.' },
-    { ic: '✉️', name: 'Grußkarten', desc: 'Für Ostern, Muttertag und alle Frühaufsteher.' },
-    { ic: '🖼️', name: 'Prints & Poster', desc: 'Zum Aufhängen in Küche und Café.' },
+    { ic: '☕', name: 'Panorama-Tassen', desc: 'Eggon und die Frühstückssprüche – rundum bedruckt, direkt am Tisch.' },
+    { ic: '👕', name: 'T-Shirts', desc: 'Das eggstra-Logo für alle Frühaufsteher.' },
   ],
 }

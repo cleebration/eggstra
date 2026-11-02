@@ -9,7 +9,7 @@ export default function Shop() {
           <h2>{shop.live ? 'Hol dir dein Lieblingsformat' : 'Der Shop kommt bald'}</h2>
           <p>
             {shop.live
-              ? 'Tassen, Karten und Prints mit deinen Lieblingssprüchen.'
+              ? 'Panorama-Tassen und Shirts mit Eggon und deinen Lieblingssprüchen.'
               : 'Wir bereiten Tassen, Karten und Prints vor. Trag dich unten ein, dann sagen wir dir Bescheid, sobald es losgeht.'}
           </p>
         </div>
